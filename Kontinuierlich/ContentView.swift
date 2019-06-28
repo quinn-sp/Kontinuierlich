@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView : View {
     @State private var selection = 0
- 
+
     var body: some View {
         TabbedView(selection: $selection){
             Text("First View")
@@ -26,6 +26,7 @@ struct ContentView : View {
 }
 
 #if DEBUG
+// swiftlint:disable type_name
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
         ContentView()
