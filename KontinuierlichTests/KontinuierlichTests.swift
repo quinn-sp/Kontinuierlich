@@ -26,7 +26,9 @@ class KontinuierlichTests: XCTestCase {
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
-            // Put the code you want to measure the time of here.
+            (0..<1_000).forEach { _ in
+                _ = sqrt(Double.random(in: 0..<1_000_000))
+            }
         }
     }
 
