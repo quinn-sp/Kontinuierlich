@@ -31,4 +31,12 @@ class KontinuierlichUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
+    func testSwitchingTab() {
+
+        let app = XCUIApplication()
+        app.tabBars.children(matching: .button).element(boundBy: 1).tap()
+        app.staticTexts["Second View"].tap()
+
+    }
+
 }
